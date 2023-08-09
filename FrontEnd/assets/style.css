@@ -36,6 +36,14 @@ footer, header, hgroup, menu, nav, section {
 	justify-content: center;
 	gap: 1rem;
   }
+  .publiez {
+	background-color: white;
+	color: black;
+	border-radius: 25px;
+	padding: 0.5rem;
+	font-weight: bold;
+  }
+  
 body {
 	line-height: 1;
 }
@@ -129,6 +137,27 @@ li:hover {
 #introduction p {
 	margin-bottom: 0.5em;
 }
+#myBtn1 button {
+	border: none;
+	border-radius: 0px;
+	color: #0f0f0f;
+	background-color: white;
+  }
+  #myBtn1 button:hover {
+	background-color: white;
+	color: #0f0f0f;
+  }
+  #myBtn2 button {
+	border: none;
+	border-radius: 0px;
+	color: #0f0f0f;
+	background-color: white;
+  }
+  #myBtn2 button:hover {
+	background-color: white;
+	color: #0f0f0f;
+  }
+  
 #portfolio h2 {
 	text-align: center;
 	margin-right: 1rem;
@@ -141,6 +170,21 @@ li:hover {
 .BtnGroup{
 	text-align: center;
 	margin: 1rem;
+}
+.BtnGroup button {
+	border: solid 1px #1D6154 ;
+	border-radius: 20px;
+	color: #1D6154;
+	background-color: white;
+	padding: .5rem;
+	
+}
+.BtnGroup button :hover{
+	color: white;
+	background-color: #1D6154;
+	transition-duration: 30ms;
+
+	
 }
 .btn {
 	border: none;
@@ -212,15 +256,132 @@ footer nav ul {
 /* Modal */
 
 .container {
-	position: fixed;
-	padding: 10px;
+	position: absolute;
 	left: 0%;
-	top: 0%;
+	top: 59%;
 	width: 100vw;
 	height: 100vh;
 	overflow: auto;
-	background-color: #333333d3;
+	background-color: rgba(0, 0, 0, 0.3);
+  }
+  .modal {
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	padding-top: 10px;
+	width: 60%;
+	height: 80%;
+	border-radius: 10px;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	transform: translate(-50%, -50%);
+	overflow: auto;
+	background-color: #ffffff;
   }
   .hidden {
 display: none
+  }
+
+
+
+  /* LOGIN */
+
+  #Login {
+	position: relative;
+	width: 1440px;
+	height: 1024px;
+	background: #FFFEF8;
+  }
+  #Log-In {
+	position: absolute;
+	width: 300px;
+	height: 36px;
+	left: 700px;
+	top: 242px;
+	font-family: 'Syne';
+	font-style: normal;
+	font-weight: 700px;
+	font-size: 30px;
+	line-height: 36px;
+	transform: translate(-50%,-50%);
+  }
+  .main-title {
+	position: absolute;
+	text-align: center;
+	color: #1D6154;
+	transform: translate(-50%,-50%);
+  }
+   .TexEmail {
+	position: absolute;
+	width: 300px;
+	height: 16px;
+	left: 0px;
+	top: 50px;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500px;
+	font-size: 30px;
+	line-height: 36px;
+	color:#3D3D3D;
+	transform: translate(-50%,-50%);
+  }
+  #UserEmail {
+	position: absolute;
+	width: 300;
+	height: 51;
+	left: 0;
+	top: 100px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	transform: translate(-50%,-50%);
+  }
+  .TexPassword {
+	position: absolute;
+	width: 300px;
+	height: 16px;
+	left: 0px;
+	top: 150px;
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 500px;
+	font-size: 30px;
+	line-height: 36px;
+	color:#3D3D3D;
+	transform: translate(-50%,-50%);
+  }
+  #UserPassword {
+	position: absolute;
+	width: 300;
+	height: 51;
+	left: 0;
+	top: 200px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+	transform: translate(-50%,-50%);
+  }
+
+  .submit-btn {
+	position: absolute;
+	width: 100px;
+	height: auto;
+	border-radius: 15px;
+	padding: .5rem;
+	left: 0;
+	top: 300px;
+	color: #FFFFFF;
+	background-color: #1D6154;color: #FFFFFF;
+	background-color: #1D6154;
+	transform: translate(-50%,-50%);
+  }
+  .CodeOublier {
+	position: absolute;
+	width: 300px;
+	height: auto;
+	border-radius: 15px;
+	padding: .5rem;
+	left: 0;
+	top: 340px;
+	transform: translate(-50%,-50%);
+	
   }
